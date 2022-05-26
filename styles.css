@@ -101,6 +101,10 @@ body {
     font-size: 24px;
     font-weight: 700;
     color: inherit;
+    transition: .5s ease;
+}
+.header__logo:hover {
+    transform: scale(1.1);
 }
 .header__menu {
     margin: 0 0 0 133px;
@@ -123,7 +127,9 @@ body {
     font-weight: 600;
     line-height: 171%;
 }
-
+.menu__link:hover {
+    text-decoration: underline;
+}
 
  /*=============================АДАПТИВ ШАПКИ=============================================*/
  @media (max-width: 1300px) {
@@ -193,16 +199,19 @@ body {
 }
 .main-block__buttons{
     display: inline-flex;
+    flex-wrap: wrap;
+    margin: -10px 0;
 }
 .main-block__button{
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    padding: 0px 36px;
+    padding: 5px 36px;
     border-radius: 0.5%;
     min-height: 48px;
     text-align: center;
+    line-height: 150%;
 }
 .main-block__button:not(:last-child) {
     margin: 0 10px 0 0;
@@ -210,10 +219,20 @@ body {
 .main-block__button_orange {
     background: #ff7b47;
     color: #ffffff;
+    transition: .5s ease;
+}
+.main-block__button_orange:hover {
+    background: #ffffff;
+    color: #ff7b47;
 }
 .main-block__button_border {
     border: 1px solid #0d5c63;
     color: #0d5c63;
+    transition: .5s ease;
+}
+.main-block__button_border:hover {
+    background: #0d5c63;
+    color: #ffffff;
 }
 .main_block__image { /*размер изображения задает контент*/
     position: absolute; /*абсолютная позиция относительно .main-block*/
@@ -425,6 +444,11 @@ body {
     background: #ffffff;
     box-shadow: 0 13px 19px rgba(0,0,0,0.07);
     height: 100%;
+    transition: .5s ease;
+}
+.practise__item:hover {
+    background: rgb(13, 92, 99, 0.2);
+    transform: scale(1.08);
 }
 .item-practise {
 }
@@ -697,6 +721,11 @@ body {
     justify-content: center;
     text-align: center;
     cursor: pointer;
+    transition: .5s ease;
+}
+.subscribe__button:hover {
+    background-color: #fd8c5f;
+    box-shadow: 0.5px 1px 10px #fafafa;
 }
 
 /*==============================АДАПТИВ SUBSCRIBE===============================================*/
@@ -880,6 +909,7 @@ body {
     color: #ff7b47;
     border: 1px solid #ff7b47;
     background: #ffffff;
+    box-shadow: 1px 1px 10px #ff7b47;
 }
 
 /*==============================АДАПТИВ CONSULTING===============================================*/
@@ -933,7 +963,8 @@ body {
     letter-spacing: 0.2px;
     line-height: 171%;
 }
-.menu-footer__link {
+.menu-footer__link:hover {
+    text-decoration: underline;
 }
 .menu-footer__list>*:not(:last-child) {
     padding: 0 0 10px 0;
@@ -953,6 +984,10 @@ body {
     display: flex;
     align-items: center;
     min-height: 30px;
+    transition: .5s ease;
+}
+.contacts-footer__item:hover {
+    text-decoration: underline;
 }
 .contacts-footer__item:not(:last-child) {
     margin: 0 0 10px 0;
@@ -1014,6 +1049,12 @@ body {
 }
 .social__item:not(:last-child) {
     margin: 0 20px 0 0;
+}
+.social__item img {
+    transition: .5s ease;
+}
+.social__item img:hover {
+    transform: scale(1.15);
 }
 /*=============================АДАПТИВ FOOTER-BOTTOM===============================================*/
 @media (max-width: 670px) {
