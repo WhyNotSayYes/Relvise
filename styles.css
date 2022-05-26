@@ -224,6 +224,7 @@ body {
 .main-block__button_orange:hover {
     background: #ffffff;
     color: #ff7b47;
+    box-shadow: 1px 1px 10px #ff7b47;
 }
 .main-block__button_border {
     border: 1px solid #0d5c63;
@@ -233,6 +234,7 @@ body {
 .main-block__button_border:hover {
     background: #0d5c63;
     color: #ffffff;
+    box-shadow: 1px 1px 10px #0d5c63;;
 }
 .main_block__image { /*размер изображения задает контент*/
     position: absolute; /*абсолютная позиция относительно .main-block*/
@@ -637,6 +639,10 @@ body {
     text-align: center;
     min-width: 140px; /*добавил ограничение, чтобы при заданном max-width: 100% у .clients__item img у блока .clients__items сохранялось выполнение св-ва flex-wrap*/
     padding: 8px 15px;
+    transition: .5s ease;
+}
+.clients__item:hover {
+    transform: scale(1.2);
 }
 .clients__item img {
     max-width: 100%; /*установил на случай, если в к иконкам добавят крупное изображение*/
@@ -1054,7 +1060,7 @@ body {
     transition: .5s ease;
 }
 .social__item img:hover {
-    transform: scale(1.15);
+    transform: scale(1.2);
 }
 /*=============================АДАПТИВ FOOTER-BOTTOM===============================================*/
 @media (max-width: 670px) {
