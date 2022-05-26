@@ -812,6 +812,9 @@ body {
 
 /*==============================АДАПТИВ GETINTOUCH===============================================*/
 @media (max-width: 1015px) {
+    .page__getintouch {
+        padding: 50px 0 80px 0;
+    }
     .getintouch__header {
         margin: 0 0 30px 0;
     }
@@ -824,5 +827,204 @@ body {
     }
     .item-getintouch {
         padding: 20px 27px;
+    }
+}
+@media (max-width: 670px) {
+    .page__getintouch {
+        padding: 30px 0 40px 0;}
+}
+
+/*==============================CONSULTING===============================================*/
+.page__consulting {
+}
+.consulting {
+    background: #ffffff;
+}
+.consulting__container {
+}
+.consulting__body {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.consulting__content {
+    padding: 0 10px 0 0;
+}
+.consulting__title {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    line-height: 133%;
+    padding: 0 0 10px 0;
+}
+.consulting__text {
+    color: #737373;
+    letter-spacing: 0.2px;
+    line-height: 142.85%;
+}
+.consulting__button {
+    min-width: 160px;
+    border-radius: 5px;
+    background: #ff7b47;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 200%;
+    display: flex;
+    padding: 15px 0;
+    justify-content: center;
+    transition: .5s ease;
+}
+.consulting__button:hover {
+    color: #ff7b47;
+    border: 1px solid #ff7b47;
+    background: #ffffff;
+}
+
+/*==============================АДАПТИВ CONSULTING===============================================*/
+@media (max-width: 670px) {
+
+    .consulting__body {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .consulting__button {
+        margin: 20px 0 0 0;
+    }
+}
+/*==============================FOOTER-TOP===============================================*/
+.footer__top {
+    background-color: #17213c;
+}
+.footer__container {
+}
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__column {
+    flex: 0 1 16.667%;
+    color: #ffffff;
+    padding: 0 5px 0 0;
+    /* min-width: 150px; */
+}
+.footer__column-last {
+    flex: 0 1 33.3333%;
+    color: #ffffff;
+    margin: 0 0 50px 0;
+}
+.footer__title {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    line-height: 150%;
+    margin: 50px 0 20px;
+}
+.footer__menu {
+}
+.menu-footer {
+}
+
+.menu-footer__item {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 171%;
+}
+.menu-footer__link {
+}
+.menu-footer__list>*:not(:last-child) {
+    padding: 0 0 10px 0;
+} 
+
+.footer__conacts {
+}
+.contacts-footer {
+    display: flex;
+    flex-direction: column;
+}
+.contacts-footer__item {
+    padding: 0 0 0px 35px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 171%;
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+}
+.contacts-footer__item:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+.contacts-footer__item_phone {
+    background: url(img/footer/footer-phone.png) 0 0 no-repeat;
+}
+.contacts-footer__item_location {
+    background: url(img/footer/footer-location.png) 0 0 no-repeat;
+}
+.contacts-footer__item_email {
+    background: url(img/footer/footer-email.png) 0 0 no-repeat;
+}
+/*==============================АДАПТИВ FOOTER-TOP===============================================*/
+@media (max-width: 1005px) {
+    .footer__column {
+        flex: 0 1 25%;
+    }
+    .footer__column-last {
+        flex: 0 1 100%;
+    }
+}
+@media (max-width: 670px) {
+    .footer__column {
+        flex: 0 1 50%;
+    }
+}
+@media (max-width: 430px) {
+    .footer__column {
+        flex: 0 1 100%;
+        text-align: center;
+    }
+    .footer__title {
+        margin: 30px 0 10px;
+    }
+    .footer__column-last .footer__title {
+        text-align: center;
+    }
+}
+
+/*==============================FOOTER-BOTTOM===============================================*/
+.footer__bottom {
+    padding: 25px 0;
+}
+.footer__container {
+}
+.footer-bootom__body {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__copypast {
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: calc(24/14*100%);
+}
+.footer__social {
+}
+.social {
+}
+.social__item:not(:last-child) {
+    margin: 0 20px 0 0;
+}
+/*=============================АДАПТИВ FOOTER-BOTTOM===============================================*/
+@media (max-width: 670px) {
+    .footer-bootom__body {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer__copypast {
+        text-align: center;
+    }
+    .footer__social {
+        margin: 0 0 20px 0;
     }
 }
