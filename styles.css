@@ -305,6 +305,10 @@ body {
     box-shadow: 0 13px 19px rgba(0,0,0,0.07);
     padding: 40px 67px 40px 40px;
     height: 100%;
+    transition: .5s ease;
+}
+.services__item:hover {
+    transform: scale(1.08);
 }
 .item-service {
 }
@@ -622,7 +626,7 @@ body {
 
 /*==============================CLIENTS===============================================*/
 .page__clients {
-    padding: 50px 0 62px 0; /*изначально padding-top=58px, padding-bottom=70px; уменьшил их на 8px, аналогичные отступы безопасности иконкам*/
+    padding: 50px 0 62px 0; /*изначально padding-top=58px, padding-bottom=70px; уменьшил их на 8px - аналогичные отступы безопасности иконкам*/
 }
 .clients {
 }
@@ -794,26 +798,48 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
     background-color: #ffffff;
     padding: 50px 15px;
-    transition: .5s ease;
-    /* height: 333px; 1й вариант увеличения при наведении */
-    /* overflow: hidden; 1й вариант увеличения при наведении */
+    transition: color 1s ease, transform .5s ease;
 }
+
 .item-getintouch:hover {
-    background-color: #252b42;
+    transform: scale(1.08);
+    background: #252b42;
     color: #ffffff;
-    transform: scale(1.08); /*2й вариант увеличения при наведении*/
-    /* height: 393px; 1й вариант увеличения при наведении */
-    /* padding: 80px 54px; 3й вариант увеличения при наведении */
 }
+.item-getintouch:hover .item-getintouch__icon-1 {
+    background: url(img/getintouch/01-white.svg) 0 0 no-repeat;
+}
+.item-getintouch:hover .item-getintouch__icon-2 {
+    background: url(img/getintouch/02-white.svg) 0 0 no-repeat;
+}
+.item-getintouch:hover .item-getintouch__icon-3 {
+    background: url(img/getintouch/03-white.svg) 0 0 no-repeat;
+}
+
 .item-getintouch:hover .item-getintouch__button {
     background-color: #252b42;
     color: #ffffff;
     border: 1px solid #ffffff;
 }
 .item-getintouch__icon {
+
+}
+.item-getintouch__icon-1 {
+    background: url(img/getintouch/01-green.svg) 0 0 no-repeat;
+    height: 72px;
+    width: 73px;
+}
+.item-getintouch__icon-2 {
+    background: url(img/getintouch/02-green.svg) 0 0 no-repeat;
+    height: 72px;
+    width: 73px;
+}
+.item-getintouch__icon-3 {
+    background: url(img/getintouch/03-green.svg) 0 0 no-repeat;
+    height: 72px;
+    width: 73px;
 }
 .item-getintouch__emails {
     font-weight: 600;
